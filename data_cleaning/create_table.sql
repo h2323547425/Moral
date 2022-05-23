@@ -1,0 +1,40 @@
+CREATE TABLE IF NOT EXISTS mytable(
+   Company                                                            VARCHAR(70) NOT NULL PRIMARY KEY
+  ,Country                                                            VARCHAR(42)
+  ,Tickers                                                            VARCHAR(313) NOT NULL
+  ,Fossil_Free_Funds_Coal_screen                                      VARCHAR(1)
+  ,Fossil_Free_Funds_Oil_gas_screen                                   VARCHAR(1)
+  ,Fossil_Free_Funds_Macroclimate30_coalfired_utility_screen          VARCHAR(1)
+  ,Fossil_Free_Funds_Fossilfired_utility_screen                       VARCHAR(1)
+  ,Fossil_Free_Funds_Clean200_screen                                  VARCHAR(1)
+  ,Deforestation_Free_Funds_Producer_screen                           VARCHAR(1)
+  ,Deforestation_Free_Funds_Financier_screen                          VARCHAR(1)
+  ,Deforestation_Free_Funds_Consumer_brand_screen                     VARCHAR(1)
+  ,Deforestation_Free_Funds_Palm_oil_producer_screen                  VARCHAR(1)
+  ,Deforestation_Free_Funds_Palm_oil_consumer_brand_screen            VARCHAR(1)
+  ,Deforestation_Free_Funds_Paper_pulp_producer_screen                VARCHAR(1)
+  ,Deforestation_Free_Funds_Paper_pulp_consumer_brand_screen          VARCHAR(1)
+  ,Deforestation_Free_Funds_Rubber_producer_screen                    VARCHAR(1)
+  ,Deforestation_Free_Funds_Rubber_consumer_brand_screen              VARCHAR(1)
+  ,Deforestation_Free_Funds_Timber_producer_screen                    VARCHAR(1)
+  ,Deforestation_Free_Funds_Timber_consumer_brand_screen              VARCHAR(1)
+  ,Deforestation_Free_Funds_Cattle_producer_screen                    VARCHAR(1)
+  ,Deforestation_Free_Funds_Cattle_consumer_brand_screen              VARCHAR(1)
+  ,Deforestation_Free_Funds_Soy_producer_screen                       VARCHAR(1)
+  ,Deforestation_Free_Funds_Soy_consumer_brand_screen                 VARCHAR(1)
+  ,Gender_Equality_Funds_Has_Equileap_gender_equality_score           VARCHAR(1)
+  ,Gun_Free_Funds_Gun_manufacturers_screen                            VARCHAR(1)
+  ,Gun_Free_Funds_Gun_retailers_screen                                VARCHAR(1)
+  ,Prison_Free_Funds_Prison_industry_screen                           VARCHAR(1)
+  ,Prison_Free_Funds_Border_industry_screen                           VARCHAR(1)
+  ,Prison_Free_Funds_Higher_risk_screen                               VARCHAR(1)
+  ,Prison_Free_Funds_Private_prison_operators_screen                  VARCHAR(1)
+  ,Weapons_Free_Funds_Major_military_contractor_screen                VARCHAR(1)
+  ,Weapons_Free_Funds_Cluster_munitions_landmines_screen              VARCHAR(1)
+  ,Weapons_Free_Funds_Nuclear_weapons_screen                          VARCHAR(1)
+  ,Tobacco_Free_Funds_Tobacco_producers_screen                        VARCHAR(1)
+  ,Tobacco_Free_Funds_Tobaccopromoting_entertainment_companies_screen VARCHAR(1)
+);
+
+INSERT INTO mytable(Company,Country,Tickers,Fossil_Free_Funds_Coal_screen,Fossil_Free_Funds_Oil_gas_screen,Fossil_Free_Funds_Macroclimate30_coalfired_utility_screen,Fossil_Free_Funds_Fossilfired_utility_screen,Fossil_Free_Funds_Clean200_screen,Deforestation_Free_Funds_Producer_screen,Deforestation_Free_Funds_Financier_screen,Deforestation_Free_Funds_Consumer_brand_screen,Deforestation_Free_Funds_Palm_oil_producer_screen,Deforestation_Free_Funds_Palm_oil_consumer_brand_screen,Deforestation_Free_Funds_Paper_pulp_producer_screen,Deforestation_Free_Funds_Paper_pulp_consumer_brand_screen,Deforestation_Free_Funds_Rubber_producer_screen,Deforestation_Free_Funds_Rubber_consumer_brand_screen,Deforestation_Free_Funds_Timber_producer_screen,Deforestation_Free_Funds_Timber_consumer_brand_screen,Deforestation_Free_Funds_Cattle_producer_screen,Deforestation_Free_Funds_Cattle_consumer_brand_screen,Deforestation_Free_Funds_Soy_producer_screen,Deforestation_Free_Funds_Soy_consumer_brand_screen,Gender_Equality_Funds_Has_Equileap_gender_equality_score,Gun_Free_Funds_Gun_manufacturers_screen,Gun_Free_Funds_Gun_retailers_screen,Prison_Free_Funds_Prison_industry_screen,Prison_Free_Funds_Border_industry_screen,Prison_Free_Funds_Higher_risk_screen,Prison_Free_Funds_Private_prison_operators_screen,Weapons_Free_Funds_Major_military_contractor_screen,Weapons_Free_Funds_Cluster_munitions_landmines_screen,Weapons_Free_Funds_Nuclear_weapons_screen,Tobacco_Free_Funds_Tobacco_producers_screen,Tobacco_Free_Funds_Tobaccopromoting_entertainment_companies_screen) VALUES ('1&1 Drillisch AG','Germany','0E6Y, DRI, DRI1, DRID',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Y',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO mytable(Company,Country,Tickers,Fossil_Free_Funds_Coal_screen,Fossil_Free_Funds_Oil_gas_screen,Fossil_Free_Funds_Macroclimate30_coalfired_utility_screen,Fossil_Free_Funds_Fossilfired_utility_screen,Fossil_Free_Funds_Clean200_screen,Deforestation_Free_Funds_Producer_screen,Deforestation_Free_Funds_Financier_screen,Deforestation_Free_Funds_Consumer_brand_screen,Deforestation_Free_Funds_Palm_oil_producer_screen,Deforestation_Free_Funds_Palm_oil_consumer_brand_screen,Deforestation_Free_Funds_Paper_pulp_producer_screen,Deforestation_Free_Funds_Paper_pulp_consumer_brand_screen,Deforestation_Free_Funds_Rubber_producer_screen,Deforestation_Free_Funds_Rubber_consumer_brand_screen,Deforestation_Free_Funds_Timber_producer_screen,Deforestation_Free_Funds_Timber_consumer_brand_screen,Deforestation_Free_Funds_Cattle_producer_screen,Deforestation_Free_Funds_Cattle_consumer_brand_screen,Deforestation_Free_Funds_Soy_producer_screen,Deforestation_Free_Funds_Soy_consumer_brand_screen,Gender_Equality_Funds_Has_Equileap_gender_equality_score,Gun_Free_Funds_Gun_manufacturers_screen,Gun_Free_Funds_Gun_retailers_screen,Prison_Free_Funds_Prison_industry_screen,Prison_Free_Funds_Border_industry_screen,Prison_Free_Funds_Higher_risk_screen,Prison_Free_Funds_Private_prison_operators_screen,Weapons_Free_Funds_Major_military_contractor_screen,Weapons_Free_Funds_Cluster_munitions_landmines_screen,Weapons_Free_Funds_Nuclear_weapons_screen,Tobacco_Free_Funds_Tobacco_producers_screen,Tobacco_Free_Funds_Tobaccopromoting_entertainment_companies_screen) VALUES ('11 PLC','Nigeria','MOBIL',NULL,'Y',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);

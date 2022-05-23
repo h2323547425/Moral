@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+body {
+    background-image: url(../../images/login_page.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.googleLoginButton {
+    margin-left: 1130px;
+    margin-top: 270px;
+}
+
+html {
+    height: 100%
+}

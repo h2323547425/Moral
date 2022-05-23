@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&display=swap');
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #756A62
+}
+
+.fave-stock-list-block {
+    width: 650%;
+    height: 90%;
+    background-color: white;
+    display: block;
+    margin: 0% 170%;
+    position: relative;
+    display: block;
+    top: 120px;
+}
+
+.fave-stock {
+    background-color: white;
+    border-bottom: solid;
+    border-bottom-color: #a59ac2;
+    grid-template-columns: 100px 100px;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+select {
+    background: transparent;
+    width: 170px;
+    padding: 2px;
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1;
+    border-radius: 0;
+    height: 25px;
+    flex: 1;
+}
+
+label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.favorites-header {
+    position: absolute;
+    top: 130px;
+    left: 245px;
+    font-size: 24px;
+    color: #a59ac2;
+    background-color: transparent;
+}
+
+.share-label {
+    position: absolute;
+    left: 637px;
+    top: 190px;
+    font-size: 20px;
+}
+
+.share-buttons {
+    position: absolute;
+    left: 710px;
+    top: 188px;
+}
+
+.dropdown-label {
+    position: absolute;
+    left: 844px;
+    top: 190px;
+    font-size: 20px;
+}
+
+.sort-by-dropdown {
+    position: relative;
+    display: flex;
+    left: 930px;
+    top: 133px;
+    z-index: 1;
+}
+
+.clear {
+    position: relative;
+    /*border-radius: 25%;*/
+    border-radius: 25px;
+    /*background: #73AD21;*/
+    padding: 15px;
+    width: 78px;
+    height: 8px;
+    left: 633%;
+    top: 330%;
+    text-align: center;
+    line-height: 9px;
+    vertical-align: top;
+    font-size: 16px;
+    color: white;
+    background-color: #a59ac2;
+    text-decoration: none;
+}

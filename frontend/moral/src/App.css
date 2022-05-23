@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&display=swap');
+
+body {
+  background-color: #EFEDE9;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+.horizontal-slider {
+  width: 100%;
+  max-width: 100px;
+  height: 10vh;
+  margin: 15px;
+}
+.example-thumb {
+  cursor: pointer;
+  position: absolute;
+  background: #ffffff;
+  border: 5px solid #756A62;
+  border-radius: 100%;
+  display: block;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
+}
+.example-thumb.active {
+  background-color: grey;
+}
+.example-track {
+  position: relative;
+  background: #ddd;
+}
+.example-track.example-track-0 {
+  background: #83a9ff;
+}
+.horizontal-slider .example-track {
+  top: 20px;
+  height: 4px;
+}
+
+.horizontal-slider .example-thumb {
+  top: 12px;
+  width: 10px;
+  outline: none;
+  height: 10px;
+  line-height: 38px;
+}
+
+.filter-block{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin: 20px 20px;
+  padding: 10px;
+}
+
+.stock-list-block{
+  width: 800px;
+  height: 100%;
+  background-color: white;
+  margin: 20px 40px;
+  padding: 10px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-gap: 20px;
+  text-align: left;
+}
+
+.font{
+  font-family: "Times New Roman", Times, serif;
+  color: mediumpurple;
+}
+
+.stock{
+  background-color: white;
+  border-bottom: #282c34;
+  grid-template-columns: 150px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.score{
+  border-radius: 25px;
+  background-color: lightpink;
+  grid-template-columns: 150px 150px;
+  width: 80px;
+  size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size:10px;
+}
+
+.price{
+  border-radius: 25px;
+  background-color: lightgrey;
+  width: 100px;
+  size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 10px;
+}
+
+.number{
+  size: 30px;
+  font-family: "Times New Roman", Times, serif;
+
+}
+.stockname{
+  text-align:justify ;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+header {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  float: right;
+}
+
+.user-button {
+  float: left;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF url(images/user_icon.png);
+  background-size: cover;
+  background-position-y: 2px;
+  border: 2.5px solid #756A62;
+  cursor: pointer;
+}
+
+.nav-bar {
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-about a {
+  font-size: 21px;
+}
+
+.account {
+  position: relative;
+}
+
+.account div {
+  position: fixed;
+  background: #FAFAFB;
+  margin-top: 47px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  pointer-events: all;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+.account a {
+  color: #756A62;
+  text-decoration: none;
+}
+
+.account div :hover {
+  background-color: #E3E0F3;
+  cursor: pointer;
+}
+
+.account button:focus + div {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0px);
+}
+
+.logo {
+  position: absolute;
+  top: -5px;
+  margin-left: 2%;
+}
+
+.logo-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.about {
+  width: 100%;
+  padding: 70px 0px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about img {
+  height: 675px;
+  width: auto;
+}
+
+.about-text h1 {
+  color: #756A62;
+  font-size: 80px;
+}
+
+.about-text p {
+  color: black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.return-home {
+  position: absolute;
+  top: 120px;
+  left: 47px;
+  text-decoration: none;
+  font-size: 19px;
+  color: #756A62;
+  /*text-transform: uppercase;*/
+  /*margin: 10000px 0 0px 20px;*/
+}
+
+.return-home:hover {
+  color: black;
+}
+
+.heart {
+  position: absolute;
+  top: 10px;
+  margin-left: 4%;
+}
+
+.heart img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.value{
+  border-radius: 25px;
+  background-color: #D4CAE8;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.feature {
+  font-size: 15px;
+  padding: 0;
+  text-align: center ;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.stockname .full-company-name {
+  color: #a59ac2;
+  font-size: 11px;
+  font-family: "Devanagari MT", Times, serif;
+}

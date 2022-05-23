@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&display=swap');
+
+.App {
+    text-align: center;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 50px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 50px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.horizontal-slider {
+    width: 100%;
+    max-width: 150px;
+    height: 10vh;
+    margin: 20px;
+}
+
+body {
+    background-color: #efede9 ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.example-thumb {
+    cursor: pointer;
+    position: absolute;
+    background: #ffffff;
+    border: 5px solid #756A62;
+    border-radius: 100%;
+    display: block;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
+}
+
+.example-thumb.active {
+    background-color: grey;
+}
+
+.example-track {
+    position: relative;
+    background: #ddd;
+}
+
+.example-track.example-track-0 {
+    background: #83a9ff;
+}
+
+.horizontal-slider .example-track {
+    top: 20px;
+    height: 4px;
+}
+
+.horizontal-slider .example-thumb {
+    top: 12px;
+    width: 10px;
+    outline: none;
+    height: 10px;
+    line-height: 38px;
+}
+
+.container {
+    width: 1400px;
+    display: flex;
+    align-content: center;
+    margin-left: 50px;
+    margin-top:  20px;
+}
+
+.container > div {
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+}
+
+.filter-block{
+    display: inline-block;
+    width: 100px;
+    height: 872px;
+    background-color: white;
+    margin: 10px 10px;
+}
+
+.stock-list-block{
+    display: inline-block;
+    width: 800px;
+    height: 800px;
+    background-color: #efede9;
+    margin: 20px 20px;
+}
+
+.scrollable{
+    display: inline-block;
+    width: 600px;
+    height: 800px;
+    background-color: #efede9;
+    margin: 0px 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.company-block{
+    display: inline-block;
+    width: 450px;
+    height: 800px;
+    background-color: #efede9;
+    margin: 10px 10px;
+    padding: 10px;
+}
+.field_do_well{
+    margin-left: 40px
+}
+.one-stock-view{
+    width: 450px;
+    height: 100%;
+    background-color: white;
+    margin: 0px 0px;
+    overflow-y: auto;
+}
+.logo-company{
+    margin: 30px
+}
+
+.description-display{
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    margin: 10px 10px;
+}
+
+.company-score{
+    background-color: white;
+    width: 120px;
+    height: 50px;
+    margin: 10px 0px;
+    float:left;
+}
+
+.parent3 {
+    display: grid;
+    grid-template-columns: 300px 150px;
+    grid-gap: 10px;
+    text-align: left;
+}
+
+.font-title{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #a59ac2;
+}
+
+.font{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    color: #756A62;
+}
+
+.font-little{
+    font-family: "Devanagari MT", Times, serif;
+    font-size: 11px;
+    color: #a59ac2;
+}
+
+.stock{
+    background-color: white;
+    border-bottom: 3px solid #a59ac2;
+    grid-template-columns: 150px 150px;
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    height: 120px;
+}
+
+.score{
+    border-radius: 25px;
+    background-color: #D4CAE8;
+    grid-template-columns: 200px 200px;
+    width: 120px;
+    height: 60px;
+    size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-size:10px;
+    margin-top: 20px;
+    margin-left: 40px
+}
+
+.price{
+    border-radius: 25px;
+    background-color: #F9CDD5;
+    width: 120px;
+    size: 30px;
+    height: 60px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-left: 30px
+}
+
+.container-small {
+    width: 500px;
+    display: flex;
+    margin-top: 20px
+
+}
+
+.number{
+    size: 30px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+.stockname{
+    text-align:justify ;
+    margin: 0px;
+    width: 160px
+}
+.small-font{
+    size: 5px
+}
+
+header {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 17px;
+    position: relative;
+}
+
+nav a {
+    color: #756A62;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height : 10px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.user-button {
+    float: left;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF url(../../images/user_icon.png);
+    background-size: cover;
+    background-position-y: 2px;
+    border: 2.5px solid #756A62;
+    cursor: pointer;
+}
+
+body {
+    background-color: #EFEDE9;
+}
+
+.nav-bar {
+    justify-content: center;
+    align-items: center;
+}
+
+.account {
+    position: relative;
+}
+
+.account ul {
+    position: fixed;
+    background: #FAFAFB;
+    margin-top: 50px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
+.account a {
+    color: #756A62;
+    text-decoration: none;
+}
+
+.account li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /*justify-content: center;*/
+    margin-right: 14px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.account a:hover {
+    color: black;
+}
+
+.account ul:hover {
+    background-color: #E3E0F3;
+}
+
+.account button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+.logo {
+    position: absolute;
+    top: -5px;
+    margin-left: 2%;
+}
+
+.logo-image {
+    width: 11%;
+    height: auto;
+}
+
+.about {
+    width: 100%;
+    padding: 70px 0px;
+    /*background-color: #191919;*/
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about img {
+    height: auto;
+    width: 450px;
+}
+
+.about-text h1 {
+    color: #756A62;
+    font-size: 80px;
+}
+
+.about-text h5 {
+    color: #756A62;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about-text p {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.LikeButton {
+}
